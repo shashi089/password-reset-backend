@@ -35,7 +35,7 @@ const forgotPassword = {
 
           // generating link for resetting the password
 
-          const link = `http://localhost:3000/users/forgot-password/${data._id}/${token}`;
+          const link = `https://pedantic-neumann-b9154a.netlify.app/users/forgot-password/${data._id}/${token}`;
 
           https: await send_mail(
             data.email,
