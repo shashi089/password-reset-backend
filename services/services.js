@@ -4,8 +4,8 @@ const bcrypt = require("bcrypt");
 const schema = require("../shared/schema");
 const jwt = require("jsonwebtoken");
 const { users } = require("../shared/mongo");
-const JWT_SECRET = "jf843738jcnj$#$df";
-// const JWT_SECRET = process.env.JWT_SECRET;
+// const JWT_SECRET = "jf843738jcnj$#$df";
+const JWT_SECRET = process.env.JWT_SECRET;
 
 const services = {
   async register(req, res) {
